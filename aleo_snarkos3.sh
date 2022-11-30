@@ -41,11 +41,11 @@ echo "==================================================
 date >> $HOME/aleo/account_new.txt
 echo "Input your Aleo account"
 read aleo_account
-if [ -z "$var" ]
+if [ -z "$aleo_account" ]
 then
       snarkos account new >>$HOME/aleo/account_new.txt
 else
-      echo aleo_account >>$HOME/aleo/account_new.txt
+      echo "$aleo_account" >>$HOME/aleo/account_new.txt
 fi
 sleep 2
 cat $HOME/aleo/account_new.txt
